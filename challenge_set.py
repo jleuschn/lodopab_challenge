@@ -8,7 +8,7 @@ setting its ``'data_path'`` value, e.g.:
 
 .. code-block:: python
 
-    from lodopab_challenge.lodopab_challenge_set import config
+    from lodopab_challenge.challenge_set import config
     config['data_path'] = '/path/to/challenge_set'
 
 Alternatively, you can directly edit the code of this module.

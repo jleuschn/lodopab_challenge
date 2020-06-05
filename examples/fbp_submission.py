@@ -4,7 +4,7 @@ from tqdm import tqdm
 from dival import get_standard_dataset
 from dival.reconstructors.odl_reconstructors import FBPReconstructor
 
-from lodopab_challenge.lodopab_challenge_set import generator, NUM_IMAGES
+from lodopab_challenge.challenge_set import generator, NUM_IMAGES
 from lodopab_challenge.submission import save_reconstruction, pack_submission
 
 # define reconstructor
