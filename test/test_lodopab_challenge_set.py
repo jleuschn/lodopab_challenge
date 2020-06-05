@@ -8,7 +8,7 @@ from dival import get_standard_dataset
 # - public lodopab dataset downloaded and configured with dival
 # - lodopab challenge set observations downloaded (path can be adjusted below)
 
-from codesprint2020.lodopab_challenge_set import (
+from lodopab_challenge.lodopab_challenge_set import (
     config, NUM_ANGLES, NUM_DET_PIXELS, MU_MAX, get_observation,
     get_observations, generator, transform_to_pre_log,
     replace_min_photon_count)

@@ -4,7 +4,7 @@ import os
 import h5py
 import numpy as np
 
-from codesprint2020.data_util import read_h5_file
+from lodopab_challenge.data_util import read_h5_file
 
 class TestReadH5File(unittest.TestCase):
     def setUp(self):

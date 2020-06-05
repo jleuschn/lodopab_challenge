@@ -1,4 +1,18 @@
 # -*- coding: utf-8 -*-
+"""
+Functions for accessing the observation data of the LoDoPaB-CT challenge.
+
+You probably need to adjust ``config['data_path']``.
+This can be done by importing the ``config`` variable from this module and
+setting its ``'data_path'`` value, e.g.:
+
+.. code-block:: python
+
+    from lodopab_challenge.lodopab_challenge_set import config
+    config['data_path'] = '/path/to/challenge_set'
+
+Alternatively, you can directly edit the code of this module.
+"""
 import os
 from math import ceil
 import numpy as np
@@ -6,7 +20,9 @@ from odl import uniform_discr
 from odl.tomo import parallel_beam_geometry
 import h5py
 
+# adjust this path to the location of the challenge set
 config = {'data_path': '/localdata/lodopab_challenge_set'}
+
 NUM_SAMPLES_PER_FILE = 128
 NUM_IMAGES = 3678
 IMAGE_SHAPE = (362, 362)
