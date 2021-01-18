@@ -50,9 +50,9 @@ def validate_and_get_submission_filenames(path):
         If the submission is invalid.
     """
     input_filenames = os.listdir(path)
-    if (len(input_filenames) == 1
+    while (len(input_filenames) == 1
             and os.path.isdir(os.path.join(path, input_filenames[0]))):
-        # enter single top-level directory
+        # enter directory
         path = os.path.join(path, input_filenames[0])
         input_filenames = os.listdir(path)
     filenames = [f for f in input_filenames
